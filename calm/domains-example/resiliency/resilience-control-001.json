@@ -1,0 +1,11 @@
+{
+  "$schema": "https://example.com/calm/resilience-control-001.json",
+  "title": "TraderX Deployment Site Configuration",
+  "control-id": "resilience-001",
+  "name": "Disaster Recovery Requirements",
+  "description": "The system must comply with the following set of requirements.",
+  "scope-text": "All critical trading systems must comply.",
+  "site-redundnacy": 2,
+  "site-distance": 400,
+  "evidence-type": "Deployment Log."
+}
