@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/calm/resilience-control-001.json",
+  "title": "Disaster Recovery Requirement",
+  "description": "Ensure that the system fullfills core disaster recovery requirements as part of the resiliency controls portfolio.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://raw.githubusercontent.com/finos/architecture-as-code/main/calm/draft/2024-08/meta/control-requirement.json"
+    }
+  ],
+  "properties": {
+    "control-id": {
+      "const": "resilience-001"
+    },
+    "name": {
+      "const": "Disaster Recovery Requirements"
+    },
+    "description": {
+      "const": "The system must comply with the following set of requirements."
+    },
+    "scope-text": {
+      "const": "All critical trading systems must comply."
+    },
+    "site-redundancy": {
+      "type": "integer",
+      "description": "The minimum number of sites any instances of this architecture need to be deployed to.",
+      "default": 2
+    },
+    "site-distance": {
+      "type": "integer",
+      "description": "The minimum distance (in km) between any deployment sites",
+      "default": 400
+    },
+    "evidence-type": {
+      "type": "string",
+      "description": "Type of evidence required to demonstrate compliance.",
+      "default": "Deployment Log."
+    }
+  },
+  "required": [
+    "control-id",
+    "name",
+    "description",
+    "scope-text",
+    "site-redundancy",
+    "site-distance",
+    "evidence-type"
+  ]
+}

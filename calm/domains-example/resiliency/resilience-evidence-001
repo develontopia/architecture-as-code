@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/finos/architecture-as-code/main/calm/draft/2024-08/meta/evidence.json",
+  "evidence": {
+    "unique-id": "evidence-001",
+    "evidence-paths": [
+      "https://example.com/calm/traderx/evidence/files/deployment-site-1.pdf",
+      "https://example.com/calm/traderx/evidence/files/deployment-site-2.txt"
+    ],
+    "control-configuration-url": "https://example.com/calm/traderx/resilience-config-001.json"
+  },
+  "evidence-date": "2024-03-01",
+  "evidence-results": "Pass. Deployed to required number of sites (2). Deployed to sites sufficient distance apart (400) km."
+}
